@@ -19,6 +19,7 @@ RUN \
 
 RUN \
   useradd -m codespace -p $(openssl passwd -5 "password") \
+  && chsh -s /usr/bin/fish codespace \
   && usermod -aG wheel codespace \
   && sed -i '85 s/# //' /etc/sudoers
 USER codespace
