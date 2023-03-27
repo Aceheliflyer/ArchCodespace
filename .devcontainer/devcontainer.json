@@ -1,4 +1,11 @@
 {
   "name": "Codespace",
-  "dockerFile": "Dockerfile"
+  "dockerFile": "Dockerfile",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "fish"
+      }
+    }
+  }
 }
